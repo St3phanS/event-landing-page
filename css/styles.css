@@ -1,0 +1,97 @@
+header{
+    height: 100px;
+    color: rgb(40, 62, 136);
+    background-color:rgb(223, 20, 20);
+
+}
+
+#logo{
+    font-family: lobster;
+}
+
+header li {
+    font-weight: 900;
+}
+
+.jumbotron{
+    background-image: url('../img/concert.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.jumbotron h2{
+    text-shadow: 4px 2px #000;
+}
+
+#music-artists{
+    height: 600px;
+    background-colorcd ..
+    : rgb(108, 129, 113);
+}
+
+ #top {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chetimg{
+    height: 250px;
+    width: 250px;
+    background-image: url('../img/Chet.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.holoimg{
+    height: 250px;
+    width: 250px;
+    background-image: url('../img/holo.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: auto 250px; */
+    /* padding-right: 100px; trying to move it to the right to make face more centered */
+    
+}
+
+.polishimg{
+    height: 250px;
+    width: 250px;
+    background-image: url('../img/polish.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jimiimg{
+    height: 250px;
+    width: 250px;
+    background-image: url('../img/jimi.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#ticketbox{
+    height: 400px;
+}
+
+#ticket_button{
+    color: #fff;
+}
+
+.staples_img{
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/staples.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* #bottom{
+    font-size: 15px;
+    font-weight: 400;
+} */
