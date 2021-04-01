@@ -1,0 +1,105 @@
+header{
+    height: 100px;
+    color: rgb(40, 62, 136);
+    background-color: #fff;
+
+}
+
+#logo{
+    font-family: lobster;
+}
+
+
+header li {
+    font-weight: 900;
+}
+
+#parallax1 {
+    background-image: url("../img/concert.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:  cover;
+  }
+
+#parallax2 {
+    background-image: url("../img/parallax2.jpeg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:  cover;
+  }
+
+.jumbotron {
+    /* background-image: url('../img/concert.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+    height: 400px;
+    color: #fff;
+ 
+}
+
+.jumbotron section{
+    background-color: rgba(0,0,0, 0.5);
+    
+}
+
+.jumbotron h2{
+    text-shadow: 4px 2px #000;
+}
+
+#bottom-parallax-text{
+    text-shadow: 1px 1px #fff;
+}
+
+#headliners {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+#holo-img{ 
+    width: 225px;
+    height: 225px;
+}
+
+#jimi-img{ 
+    width: 225px;
+    height: 225px;
+}
+
+ #top {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ticketbox-con{
+    height: 400px;
+}
+
+#ticketbox section{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#ticket_button{
+    color: #fff;
+}
+
+.staples_img_con{
+    height: 800px;
+    width: 900px;
+    background-image: url('../img/staples.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+
+/* #bottom{
+    font-size: 15px;
+    font-weight: 400;
+} */
