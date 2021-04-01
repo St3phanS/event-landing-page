@@ -1,7 +1,7 @@
 header{
     height: 100px;
     color: rgb(40, 62, 136);
-    background-color #fff;
+    background-color: #fff;
 
 }
 
@@ -14,9 +14,18 @@ header li {
     font-weight: 900;
 }
 
-.parallax {
+#parallax1 {
     background-image: url("../img/concert.jpg");
     height: 700px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:  cover;
+  }
+
+#parallax2 {
+    background-image: url("../img/parallax2.jpeg");
+    height: 100%;
     background-attachment: fixed;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -47,7 +56,8 @@ header li {
 }
 
 #headliners {
-    background-color: rgba(0,0,0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
 }
 
 #holo-img{ 
@@ -71,8 +81,8 @@ header li {
     height: 400px;
 }
 
-#ticketbox{
-    background-color: rgba(0,0,0, 0.3);
+#ticketbox section{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #ticket_button{
