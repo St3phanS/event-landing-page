@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Bootstrap Template</title>
-    <link rel="stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -31,32 +32,37 @@
         </nav>
     </header>
 
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="row">
-            <div class="col-sm-12 w-100" >
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <section class="col-md-8 text-center p-5">
-                        <h2 class="text-uppercase">The Music Event of A Lifetime</h2>
-                        <p class="text-muted">Prepare to have the largest eargasm of your life</p>
-                        <button class="btn bg-transparent text-uppercase rounded px-2 font-weight-bold border border-dark text-dark">Get your Ticket</button>
-                    </section>
+    <div class="parallax">
+        <div class="jumbotron jumbotron-fluid bg-transparent" id="jumbotron-bg">
+            <div class="row">
+                <div class="col-sm-12 w-100" >
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <section class="col-md-6 text-center p-5">
+                            <h2 class="text-uppercase">The Music Event of A Lifetime</h2>
+                            <p class="text-light">Prepare to have the largest eargasm of your life</p>
+                            <button class="btn bg-transparent text-uppercase rounded px-2 font-weight-bold border border-dark text-light">Get your Ticket</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 offset-md-4 d-flex flex-column justify-content-center" id="bottom-parallax-text">
+                    <p class="h2 text-center">The Artists</p>
+                    <p class="text-center">This event will blow your socks off. It has everything from guitar shredding to new age robot sex music</p>
                 </div>
             </div>
         </div>
     </div>
+<!-- parallax experiment -->
 
-    <div class="container-fluid" id="music-artists">
-        <div class="row">
-            <div class="col-sm-4 offset-md-4 d-flex flex-column justify-content-center">
-                <p class="h2 text-center">The Artists</p>
-                <p class="text-center">This event will blow your socks off. It has everything from old timey music to new age machine shop music</p>
-            </div>
-        </div>
-        <div class="row h-100">
-            <div class="col-sm-3 d-flex flex-column justify-content-center bg-primary">
-                <div class="row pt-5 pb-5">
-                    <div class="chetimg"></div>
+        <div class="row h-100" id="headliners">
+            <div class="col-sm-3 d-flex flex-column justify-content-center">
+                <div class="row pt-5 pb-5 d-flex justify-content-center">
+                    <img src="./img/Chet.jpeg" alt="Image of Chet Faker" class="img-fluid">
+                    <!-- <div class="chetimg"></div> -->
                 </div>
                 <div class="row d-flex flex-column justify-content-center text-center">
                     <p class="h4">Chet Faker</p>
@@ -67,10 +73,12 @@
                     <p>@Chetfaker.com</p>
                 </div>
             </div>
-            <div class="col-sm-3 d-flex justify-content-center bg-secondary h-100">
-                <div class="row pt-5 pb-5">
-                    <div class="holoimg"></div>
+            <div class="col-sm-3 d-flex flex-column justify-content-center">
+                <div class="row pt-5 pb-5 d-flex  justify-content-center">
+                        <img src="./img/holo.jpeg" alt="Image of San Holo" class="img-fluid" id="holo-img">
+                    <!-- <div class="holoimg"></div> -->
                 </div>
+
                 <div class="row d-flex flex-column justify-content-center text-center">
                     <p class="h4">San Holo</p>
                     <p>Disc Jokey</p>
@@ -80,42 +88,40 @@
                     <p>@Sanholo.com</p>
                 </div>
             </div>
-            <div class="col-sm-3 d-flex justify-content-center bg-success">
-                <div class="col-sm-3 d-flex justify-content-center bg-secondary">
-                    <div class="row pt-5 pb-5">
-                        <div class="polishimg"></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-center text-center">
-                        <p class="h4">Polish Ambassador</p>
-                        <p>Disc Jokey</p>
-                        <p>Music Producer</p>
-                        <p>Sound Maker</p>
-                        <br> 
-                        <p>@PolishAmbassador.com</p>
-                    </div>
+            <div class="col-sm-3 d-flex flex-column justify-content-center">
+                <div class="row pt-5 pb-5 d-flex justify-content-center text-center">
+                    <img src="./img/polish.jpeg" alt="image of Polish Ambassador" class="img-fluid">
+                    <!-- <div class="polishimg"></div> -->
+                </div>
+                <div class="row d-flex flex-column justify-content-center text-center">
+                    <p class="h4">Polish Ambassador</p>
+                    <p>Disc Jokey</p>
+                    <p>Music Producer</p>
+                    <p>Sound Maker</p>
+                    <br> 
+                    <p>@PolishAmbassador.com</p>
                 </div>
             </div>
-            <div class="col-sm-3 d-flex justify-content-center bg-danger">
-                <div class="col-sm-3 d-flex justify-content-center bg-secondary">
-                    <div class="row pt-5 pb-5">
-                        <div class="jimiimg"></div>
-                    </div>
-                    <div class="row d-flex flex-column justify-content-center text-center">
-                        <p class="h4">Jimi Hendrix</p>
-                        <p>String Master</p>
-                        <p>Guitar Shredder</p>
-                        <p>Fire Bender</p>
-                        <br> 
-                        <p>@JimiHendrix.com</p>
-                    </div>
+            <div class="col-sm-3 d-flex flex-column justify-content-center">
+                <div class="row pt-5 pb-5 d-flex justify-content-center text-center">
+                    <img src="./img/jimi.jpeg" alt="image of Jimi Hendrix" class="img-fluid" id="jimi-img">
+                    <!-- <div class="jimiimg"></div> -->
+                </div>
+                <div class="row d-flex flex-column justify-content-center text-center">
+                    <p class="h4">Jimi Hendrix</p>
+                    <p>String Master</p>
+                    <p>Guitar Shredder</p>
+                    <p>Fire Bender</p>
+                    <br> 
+                    <p>@JimiHendrix.com</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid">
-        <div class="row" id="ticketbox">
-                <div class="col-md-6 offset-md-3 bg-warning h-100">
+        <div class="row" id="ticketbox-con">
+                <div class="col-md-6 offset-md-3 h-100" id="ticketbox">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <section class="col-md-8 text-center p-5">
                             <h2 class="text-uppercase">Get Your Tickets Today!</h2>
@@ -128,23 +134,26 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 d-flex">
-                <div class="row">
-                    <p class="h2">The Venue</p>
-                    <br>
-                    <br>
-                    <p>Our even will be held at the</p> 
-                    <p class="fw-bolder">STAPLES Center, 1111 S. Figueroa St Los Angeles, Ca</p>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-m-5 d-flex flex-column mr-4 w-45">
+                <div class="row"> 
+                    <div class="col-7">
+                        <p class="h2 mb-5">The Venue</p>
+                        <p> 
+                            Our even will be held at the <span class="font-weight-bolder">STAPLES Center, 1111 S. Figueroa St Los Angeles, Ca</span>
+                            
+                        </p>
+
+                    </div>   
                 </div>
                 <div class="row">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277112892!2d-118.26944278478526!3d34.043017480608455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES%20Center!5e0!3m2!1sen!2sus!4v1617226859796!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277112892!2d-118.26944278478526!3d34.043017480608455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sSTAPLES%20Center!5e0!3m2!1sen!2sus!4v1617300061806!5m2!1sen!2sus" width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="staples_img_con">
-                    <div class="staples_img"></div>
-                </div>
+
+            <div class="col-m-5 ml-4 w-45">
+                <div class="staples_img_con"></div>
+                
 
             </div>
         </div>

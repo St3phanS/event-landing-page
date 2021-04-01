@@ -1,7 +1,7 @@
 header{
     height: 100px;
     color: rgb(40, 62, 136);
-    background-color:rgb(223, 20, 20);
+    background-color #fff;
 
 }
 
@@ -9,28 +9,55 @@ header{
     font-family: lobster;
 }
 
+
 header li {
     font-weight: 900;
 }
 
-.jumbotron{
-    background-image: url('../img/concert.jpg');
+.parallax {
+    background-image: url("../img/concert.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:  cover;
+  }
+
+.jumbotron {
+    /* background-image: url('../img/concert.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     height: 400px;
     color: #fff;
+ 
+}
+
+.jumbotron section{
     background-color: rgba(0,0,0, 0.5);
+    
 }
 
 .jumbotron h2{
     text-shadow: 4px 2px #000;
 }
 
-#music-artists{
-    height: 600px;
-    background-colorcd ..
-    : rgb(108, 129, 113);
+#bottom-parallax-text{
+    text-shadow: 1px 1px #fff;
+}
+
+#headliners {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+#holo-img{ 
+    width: 225px;
+    height: 225px;
+}
+
+#jimi-img{ 
+    width: 225px;
+    height: 225px;
 }
 
  #top {
@@ -40,55 +67,26 @@ header li {
     margin-bottom: 20px;
 }
 
-.chetimg{
-    height: 250px;
-    width: 250px;
-    background-image: url('../img/Chet.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.holoimg{
-    height: 250px;
-    width: 250px;
-    background-image: url('../img/holo.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* background-size: auto 250px; */
-    /* padding-right: 100px; trying to move it to the right to make face more centered */
-    
-}
-
-.polishimg{
-    height: 250px;
-    width: 250px;
-    background-image: url('../img/polish.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.jimiimg{
-    height: 250px;
-    width: 250px;
-    background-image: url('../img/jimi.jpeg');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-#ticketbox{
+#ticketbox-con{
     height: 400px;
+}
+
+#ticketbox{
+    background-color: rgba(0,0,0, 0.3);
 }
 
 #ticket_button{
     color: #fff;
 }
 
-.staples_img{
-    height: 500px;
-    width: 100%;
+.staples_img_con{
+    height: 800px;
+    width: 900px;
     background-image: url('../img/staples.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+
 }
 
 /* #bottom{
